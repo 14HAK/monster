@@ -8,10 +8,12 @@
 .env.development.local
 .env.test.local
 .env.production.local
+# Root-level .vscode directory only
+/.vscode/
 
 # Editor-specific files
 *.txt
-*.js
+examples.js
 
 dist/
 
