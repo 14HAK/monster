@@ -1,6 +1,8 @@
 "use client";
 
 import React from "react";
+import Context2 from "./react/Context2";
+// import HooksTypes from "./react/HooksTypes";
 // import Action from "./react/Action";
 // import Es6 from "./ES6/Es6";
 
@@ -9,7 +11,8 @@ function App(): React.ReactElement {
     <>
       {/* <Es6 /> */}
       {/* <Action /> */}
-      <h1 className="p-5 text-3xl bg-amber-500 text-slate-700">moye moye</h1>
+      {/* <HooksTypes /> */}
+      <Context2 />
     </>
   );
 }
