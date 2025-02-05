@@ -1,10 +1,13 @@
-import React from "react";
+/* eslint-disable react/react-in-jsx-scope */
+import "./App.css";
+import Game from "./tic-tac-toe/Game";
 
-export default function App(): React.ReactElement {
+function App() {
   return (
-    <>
-      <h1>App page</h1>
-      <p>page of App</p>
-    </>
+    <div className="App">
+      <Game />
+    </div>
   );
 }
+
+export default App;
