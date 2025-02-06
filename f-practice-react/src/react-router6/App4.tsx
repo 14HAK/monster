@@ -1,17 +1,15 @@
 import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const AppLayout = lazy(() => import("./react-router6/AppLayout"));
-const Home = lazy(() => import("./react-router6/Home"));
-const About = lazy(() => import("./react-router6/About"));
-const User = lazy(() => import("./react-router6/User"));
-const UserDetails = lazy(() => import("./react-router6/UserDetails"));
-const Search = lazy(() => import("./react-router6/Search"));
-const ErrorHandling = lazy(() => import("./react-router6/ErrorHandling"));
-const ProtectedComponent = lazy(
-  () => import("./react-router6/ProtectedComponent"),
-);
-const ProtectedRoute = lazy(() => import("./react-router6/ProtectedRoute"));
+const AppLayout = lazy(() => import("./layout/AppLayout"));
+const Home = lazy(() => import("./components/Home"));
+const About = lazy(() => import("./components/About"));
+const User = lazy(() => import("./dynamic-id/User"));
+const UserDetails = lazy(() => import("./dynamic-id/UserDetails"));
+const Search = lazy(() => import("./components/Search"));
+const ErrorHandling = lazy(() => import("./components/ErrorHandling"));
+const ProtectedComponent = lazy(() => import("./protected/ProtectedComponent"));
+const ProtectedRoute = lazy(() => import("./protected/ProtectedRoute"));
 
 const router = createBrowserRouter([
   {

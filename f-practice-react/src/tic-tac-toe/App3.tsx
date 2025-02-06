@@ -1,6 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 import "./App.css";
-import Game from "./tic-tac-toe/Game";
+import Game from "./Game";
 
 function App3() {
   return (

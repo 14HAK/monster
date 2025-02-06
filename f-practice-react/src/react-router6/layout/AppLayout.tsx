@@ -1,8 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import { Outlet } from "react-router-dom";
 
-const Header = lazy(() => import("./Header"));
-const Footer = lazy(() => import("./Footer"));
+const Header = lazy(() => import("../components/Header.tsx"));
+const Footer = lazy(() => import("../components/Footer.tsx"));
 
 export default function AppLayout(): React.ReactElement {
   return (

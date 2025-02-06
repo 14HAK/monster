@@ -8,7 +8,7 @@ interface ProtectedRouteProps {
 export default function ProtectedRoute({
   children,
 }: ProtectedRouteProps): React.ReactElement {
-  const isAuthenticate: boolean = false;
+  const isAuthenticate: boolean = true;
 
   if (!isAuthenticate) {
     console.log("you are not protected user!");

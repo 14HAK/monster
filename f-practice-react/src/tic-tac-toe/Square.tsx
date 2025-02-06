@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css"; // Optional: add some CSS to style your game
+import "./App.css"; // Optional: add some CSS to style your game
 
 interface SquareProps {
   key: number;
