@@ -2,7 +2,7 @@
 import "./App.css";
 import Game from "./tic-tac-toe/Game";
 
-function App() {
+function App3() {
   return (
     <div className="App">
       <Game />
@@ -10,4 +10,4 @@ function App() {
   );
 }
 
-export default App;
+export default App3;
