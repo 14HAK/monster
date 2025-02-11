@@ -1,10 +1,9 @@
 import React from "react";
-import Es6 from "./ES6/Es6";
 
 function App(): React.ReactElement {
   return (
     <>
-      <Es6 />
+      <h1>this is App.tsx file</h1>
     </>
   );
 }
