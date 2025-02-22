@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co.com/Thyp9GD/50-HOURS-REACT-JS-19-MONSTER-CLASS-1-27-screenshot.png" alt="isolated" width="full" style="margin: 0 auto;"/>
+<img src="./_assets/monster.png" alt="isolated" width="full" style="margin: 0 auto;"/>
 
 # Monster Practices && Projects
 

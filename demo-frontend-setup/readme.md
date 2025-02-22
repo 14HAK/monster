@@ -15,18 +15,23 @@
 # Project Setup :
 
 - Clone This Project From Here : [Github](https://github.com/14HAK/monster.git)
-
+```javascript
+yarn
+yarn dev // check package.json: script
+```
 # Project Folder Structure :
 
+```javascript
 wekipidia-page-design/
 ├── public/ 📂
-│   └── index.html 📝
+│ └── index.html 📝
 ├── src/ 📂
-│   ├── index.js 📝
-│   └── App.js 📝
+│ ├── index.js 📝
+│ └── App.js 📝
 ├── package.json 📝
 ├── webpack.config.js 📝
 └── .babelrc 📝
+```
 
 
 
@@ -47,3 +52,10 @@ wekipidia-page-design/
 <footer> - Defines a footer for a document or a section
 <details> - Defines additional details that the user can open and close on demand
 <summary> - Defines a heading for the <details> element
+
+# Packages [yarn environment] :
+
+[![NPM Version][npm-image]][npm-url]
+
+[npm-image]: https://badgen.net/npm/v/batch
+[npm-url]: https://npmjs.org/package/batch
