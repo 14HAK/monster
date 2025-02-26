@@ -1,10 +1,15 @@
 import React from "react";
+import ProjectCard from "../components/ProjectCard";
+import SectionCom from "../components/SectionCom";
 
 const Projects = (): React.ReactElement => {
   return (
     <>
-      <h1>Projects page</h1>
-      <p>page of Projects</p>
+      <SectionCom className="mx-8 my-14">
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+      </SectionCom>
     </>
   );
 };

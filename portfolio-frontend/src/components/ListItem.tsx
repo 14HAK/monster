@@ -3,8 +3,9 @@ import React from "react";
 
 interface TListItemProps {
   className: string;
-  navName: string;
+  navName?: string;
   to: string;
+  svg?: React.ReactElement;
 }
 
 const ListItem = ({
@@ -14,7 +15,7 @@ const ListItem = ({
 }: TListItemProps): React.ReactElement => {
   return (
     <>
-      <motion.li className={`${className}`}>
+      <motion.li className={`${className} list-none`}>
         <a href={to} rel="noreferrer">
           ____{navName}
         </a>
