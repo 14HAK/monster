@@ -9,7 +9,9 @@ interface TSectionProps {
 const Text = ({ children, className }: TSectionProps): React.ReactElement => {
   return (
     <>
-      <motion.p className={`${className}`}>{children}</motion.p>
+      <motion.p className={`${className} font-light text-[#F8F2DE]`}>
+        {children}
+      </motion.p>
     </>
   );
 };

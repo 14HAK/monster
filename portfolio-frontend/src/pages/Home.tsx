@@ -12,13 +12,13 @@ const Home = (): React.ReactElement => {
     <>
       <SectionCom className="mx-8 my-14">
         <SectionCom className="mb-16">
-          <Heading className="mb-2 text-6xl font-extrabold text-[#ccd6f6]">
+          <Heading className="mb-2 text-6xl font-extrabold text-[#ECDCBF]">
             Dulon Mahadi
           </Heading>
-          <Heading className="mb-4 text-4xl font-semibold text-[#ccd6f6]">
+          <Heading className="mb-4 text-4xl font-semibold text-[#F8F2DE]">
             MERN Stack Developer
           </Heading>
-          <Text className="w-96 text-xl font-normal">
+          <Text className="w-96 text-xl font-light text-[#F8F2DE]">
             I build accessible, pixel-perfect digital experiences for the web.
           </Text>
         </SectionCom>
@@ -26,21 +26,21 @@ const Home = (): React.ReactElement => {
         <SectionCom className="mb-14">
           <Navbar />
         </SectionCom>
-        <SectionCom className="flex content-start justify-items-start gap-4">
+        <SectionCom className="flex content-start gap-4 justify-items-start">
           <Social
-            className="cursor-pointer text-3xl"
+            className="text-3xl cursor-pointer"
             link="https://github.com/14HAK"
           >
             <FaSquareGithub />
           </Social>
           <Social
-            className="cursor-pointer text-3xl"
+            className="text-3xl cursor-pointer"
             link="https://www.linkedin.com/in/dulon-mahadi-mern/"
           >
             <FaLinkedin />
           </Social>
           <Social
-            className="cursor-pointer text-3xl"
+            className="text-3xl cursor-pointer"
             link="https://wa.me/+8801640677464"
           >
             <FaSquareWhatsapp />

@@ -15,7 +15,7 @@ const Social = ({
   return (
     <>
       <motion.a
-        className={`${className} transition-all duration-500 hover:font-bold hover:text-[#62fad6]`}
+        className={`${className} transition-all duration-500 hover:font-bold hover:text-red-400`}
         href={link}
         target="_blank"
         rel="noreferrer"
