@@ -7,26 +7,26 @@ const Navbar = (): React.ReactElement => {
   return (
     <>
       <SectionCom className="">
-        <motion.ol className="grid grid-cols-1 gap-4 text-sm font-semibold uppercase translate-2">
+        <motion.ol className="grid translate-2 grid-cols-1 gap-4 text-sm font-semibold uppercase">
           <ListItem
             className="text-[#F8F2DE] transition-all duration-700 hover:font-semibold hover:text-red-400"
             navName="about"
-            to="#/"
+            to="/about"
           />
           <ListItem
             className="text-[#F8F2DE] transition-all duration-700 hover:font-semibold hover:text-red-400"
-            navName="experience"
-            to="#/"
+            navName="experiences"
+            to="/experiences"
           />
           <ListItem
             className="text-[#F8F2DE] transition-all duration-700 hover:font-semibold hover:text-red-400"
             navName="projects"
-            to="#/"
+            to="/projects"
           />
           <ListItem
             className="text-[#F8F2DE] transition-all duration-700 hover:font-semibold hover:text-red-400"
             navName="skills"
-            to="#/"
+            to="/skills"
           />
         </motion.ol>
       </SectionCom>
