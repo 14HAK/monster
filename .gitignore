@@ -19,6 +19,7 @@
 *test.ts
 examples.js
 dist/
+*dist/
 
 
 # Temporary files

@@ -35,7 +35,7 @@ import {
   SiShadcnui,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import { TExpereance } from "../types";
+import { TExpereance, TProjects, TSkills } from "../types";
 
 export const experiences: TExpereance[] = [
   {
@@ -106,4 +106,56 @@ export const experiences: TExpereance[] = [
     ],
     link: "https://drive.google.com/file/d/162ziMlEvEnoKEbrtjfErnrSLYlcKvBPR/view?usp=sharing",
   },
+];
+
+//todo: next add yours project here:
+export const projects: TProjects[] = [
+  {
+    img: "https://www.uniqode.com/blog/wp-content/uploads/2022/11/How-to-create-a-digital-business-card-768x432.png",
+    title: "project titles here",
+    description: [
+      "project descriptions here step by step",
+      "descriptions 2 step by steps in here",
+    ],
+    skills: [{ title: "React", icon: FaReact }],
+    link: "https://www.youtube.com",
+  },
+  {
+    img: "https://www.uniqode.com/blog/wp-content/uploads/2022/11/How-to-create-a-digital-business-card-768x432.png",
+    title: "project titles here",
+    description: [
+      "project descriptions here step by step",
+      "descriptions 2 step by steps in here",
+    ],
+    skills: [{ title: "React", icon: FaReact }],
+    link: "https://www.youtube.com",
+  },
+];
+
+//todo: next add yours skills here:
+export const skills: TSkills[] = [
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
+  { title: "react", icon: FaReact },
 ];
