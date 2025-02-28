@@ -15,9 +15,11 @@ const router = createBrowserRouter([
     element: (
       <Suspense
         fallback={
-          <h2 className="mb-14 flex items-center justify-center text-3xl font-light text-cyan-900">
-            loading...
-          </h2>
+          <div className="flex items-center justify-center h-screen">
+            <div className="p-6 text-4xl font-light rounded-lg text-cyan-500">
+              loading...
+            </div>
+          </div>
         }
       >
         <Layout />
@@ -29,9 +31,11 @@ const router = createBrowserRouter([
         element: (
           <Suspense
             fallback={
-              <h2 className="mb-14 flex items-center justify-center text-3xl font-light text-cyan-900">
-                loading...
-              </h2>
+              <div className="flex items-center justify-center h-screen">
+                <div className="p-6 text-4xl font-light rounded-lg text-cyan-500">
+                  loading...
+                </div>
+              </div>
             }
           >
             <About />
@@ -43,9 +47,11 @@ const router = createBrowserRouter([
         element: (
           <Suspense
             fallback={
-              <h2 className="mb-14 flex items-center justify-center text-3xl font-light text-cyan-900">
-                loading...
-              </h2>
+              <div className="flex items-center justify-center h-screen">
+                <div className="p-6 text-4xl font-light rounded-lg text-cyan-500">
+                  loading...
+                </div>
+              </div>
             }
           >
             <About />
@@ -57,9 +63,11 @@ const router = createBrowserRouter([
         element: (
           <Suspense
             fallback={
-              <h2 className="mb-14 flex items-center justify-center text-3xl font-light text-cyan-900">
-                loading...
-              </h2>
+              <div className="flex items-center justify-center h-screen">
+                <div className="p-6 text-4xl font-light rounded-lg text-cyan-500">
+                  loading...
+                </div>
+              </div>
             }
           >
             <Experience />
@@ -71,9 +79,11 @@ const router = createBrowserRouter([
         element: (
           <Suspense
             fallback={
-              <h2 className="mb-14 flex items-center justify-center text-3xl font-light text-cyan-900">
-                loading...
-              </h2>
+              <div className="flex items-center justify-center h-screen">
+                <div className="p-6 text-4xl font-light rounded-lg text-cyan-500">
+                  loading...
+                </div>
+              </div>
             }
           >
             <Projects />
@@ -85,9 +95,11 @@ const router = createBrowserRouter([
         element: (
           <Suspense
             fallback={
-              <h2 className="mb-14 flex items-center justify-center text-3xl font-light text-cyan-900">
-                loading...
-              </h2>
+              <div className="flex items-center justify-center h-screen">
+                <div className="p-6 text-4xl font-light rounded-lg text-cyan-500">
+                  loading...
+                </div>
+              </div>
             }
           >
             <Skills />

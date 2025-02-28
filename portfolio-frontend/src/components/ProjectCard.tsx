@@ -13,7 +13,7 @@ const ProjectCard = (): React.ReactElement => {
     <>
       <SectionCom className="mb-16 grid max-h-full cursor-pointer grid-cols-12 gap-x-4 rounded-md p-8 duration-700 hover:bg-[#ECDCBF]/10">
         <SectionCom className="col-span-3 text-2xl">
-          <Image className="w-56 h-24 rounded-md" src={ProjectCardImage} />
+          <Image className="h-24 w-56 rounded-md" src={ProjectCardImage} />
         </SectionCom>
         <SectionCom className="col-span-9">
           <Heading className="mb-4 text-2xl text-[#F8F2DE] hover:text-red-400 hover:underline">
@@ -29,13 +29,15 @@ const ProjectCard = (): React.ReactElement => {
               </Span>
             </a>
           </Heading>
-          <Text className="mb-2 text-md">
-            Build and maintain critical components used to construct Klaviyo
-            {"’"}s frontend, across the whole product. Work closely with
-            cross-functional teams, including developers, designers, and product
-            managers, to implement and advocate for best practices in web
-            accessibility.
-          </Text>
+          <SectionCom className="mb-8 text-xl">
+            <Text className="">
+              Build and maintain critical components used to construct Klaviyo
+              {"’"}s frontend, across the whole product. Work closely with
+              cross-functional teams, including developers, designers, and
+              product managers, to implement and advocate for best practices in
+              web accessibility.
+            </Text>
+          </SectionCom>
 
           <SectionCom className="flex gap-x-1.5">
             <Badge className="flex cursor-pointer items-center gap-x-0.5 rounded-full bg-[#ECDCBF] px-3 py-0 text-center text-sm font-semibold text-red-800">

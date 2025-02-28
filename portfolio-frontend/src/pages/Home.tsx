@@ -19,28 +19,29 @@ const Home = (): React.ReactElement => {
             MERN Stack Developer
           </Heading>
           <Text className="w-96 text-xl font-light text-[#F8F2DE]">
-            I build accessible, pixel-perfect digital experiences for the web.
+            MERN stands for MongoDB, Express.js, React.js and Node.js. yes! i am
+            the BUG of MERN Stack.
           </Text>
         </SectionCom>
 
         <SectionCom className="mb-14">
           <Navbar />
         </SectionCom>
-        <SectionCom className="flex content-start gap-4 justify-items-start">
+        <SectionCom className="flex content-start justify-items-start gap-4">
           <Social
-            className="text-3xl cursor-pointer"
+            className="cursor-pointer text-3xl"
             link="https://github.com/14HAK"
           >
             <FaSquareGithub />
           </Social>
           <Social
-            className="text-3xl cursor-pointer"
+            className="cursor-pointer text-3xl"
             link="https://www.linkedin.com/in/dulon-mahadi-mern/"
           >
             <FaLinkedin />
           </Social>
           <Social
-            className="text-3xl cursor-pointer"
+            className="cursor-pointer text-3xl"
             link="https://wa.me/+8801640677464"
           >
             <FaSquareWhatsapp />
