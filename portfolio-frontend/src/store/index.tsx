@@ -1,13 +1,23 @@
+import { BiLogoPostgresql } from "react-icons/bi";
+import { DiMongodb } from "react-icons/di";
 import {
+  FaBootstrap,
+  FaCcMastercard,
   FaFortAwesome,
+  FaGitAlt,
+  FaGithub,
   FaHandsHelping,
+  FaMicrochip,
   FaNode,
+  FaNodeJs,
+  FaNpm,
   FaPeopleArrows,
   FaPlaneDeparture,
   FaReact,
   FaYarn,
 } from "react-icons/fa";
 import {
+  FaBoltLightning,
   FaChildren,
   FaComments,
   FaFlagCheckered,
@@ -15,9 +25,12 @@ import {
   FaPeopleGroup,
 } from "react-icons/fa6";
 import { GiInjustice, GiLion, GiWaveSurfer } from "react-icons/gi";
+import { GrStripe } from "react-icons/gr";
 import { HiMiniAcademicCap } from "react-icons/hi2";
 import { ImBooks } from "react-icons/im";
 import { IoLogoCss3 } from "react-icons/io";
+import { IoLogoVercel } from "react-icons/io5";
+import { LiaWindowRestoreSolid } from "react-icons/lia";
 import { PiYarnFill } from "react-icons/pi";
 import {
   RiJavascriptFill,
@@ -25,16 +38,27 @@ import {
   RiTailwindCssFill,
 } from "react-icons/ri";
 import {
+  SiCss3,
   SiExpress,
+  SiFusionauth,
+  SiGoogleauthenticator,
+  SiHeadlessui,
+  SiJavascript,
   SiMongodb,
   SiMongoose,
   SiMui,
+  SiMysql,
+  SiNetlify,
+  SiPnpm,
   SiReacthookform,
   SiReactrouter,
   SiSass,
   SiShadcnui,
+  SiTypescript,
+  SiWebauthn,
 } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
+import { TbBrandFramerMotion, TbBrandRedux, TbFishHook } from "react-icons/tb";
+import { VscVscode, VscVscodeInsiders } from "react-icons/vsc";
 import { TExpereance, TProjects, TSkills } from "../types";
 
 export const experiences: TExpereance[] = [
@@ -134,28 +158,42 @@ export const projects: TProjects[] = [
 
 //todo: next add yours skills here:
 export const skills: TSkills[] = [
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
-  { title: "react", icon: FaReact },
+  { title: "Vscode", icon: VscVscodeInsiders },
+  { title: "HTML5", icon: FaHtml5 },
+  { title: "CSS3", icon: SiCss3 },
+  { title: "Javascript", icon: SiJavascript },
+  { title: "Git", icon: FaGitAlt },
+  { title: "Github", icon: FaGithub },
+  { title: "React", icon: FaReact },
+  { title: "hooks/react", icon: TbFishHook },
+  { title: "Redux", icon: TbBrandRedux },
+  { title: "Redux-toolkit", icon: TbBrandRedux },
+  { title: "Bootstrap", icon: FaBootstrap },
+  { title: "Netlify", icon: SiNetlify },
+  { title: "Vercel", icon: IoLogoVercel },
+  { title: "react-router-dom", icon: SiReactrouter },
+  { title: "react-hook-form", icon: SiReacthookform },
+  { title: "HeadlessUi/react", icon: SiHeadlessui },
+  { title: "Shadcnui/react", icon: SiShadcnui },
+  { title: "Framer-motion", icon: TbBrandFramerMotion },
+  { title: "Node", icon: FaNodeJs },
+  { title: "Express", icon: SiExpress },
+  { title: "Mongodb", icon: DiMongodb },
+  { title: "Mongoose", icon: SiMongoose },
+  { title: "REST API", icon: LiaWindowRestoreSolid },
+  { title: "CRUD", icon: FaMicrochip },
+  { title: "authentication", icon: SiFusionauth },
+  { title: "authorization", icon: SiWebauthn },
+  { title: "payment-system", icon: FaCcMastercard },
+  { title: "JWT", icon: SiGoogleauthenticator },
+  { title: "Stripe", icon: GrStripe },
+  { title: "typescript", icon: SiTypescript },
+  { title: "npm", icon: FaNpm },
+  { title: "pnpm", icon: SiPnpm },
+  { title: "yarn", icon: FaYarn },
+  { title: "SCSS", icon: SiSass },
+  { title: "Nextjs", icon: RiNextjsFill },
+  { title: "Postgresql", icon: BiLogoPostgresql },
+  { title: "Mysql", icon: SiMysql },
+  { title: "others", icon: FaBoltLightning },
 ];

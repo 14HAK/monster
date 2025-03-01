@@ -7,7 +7,7 @@ import Home from "../pages/Home";
 const Layout = (): React.ReactElement => {
   return (
     <>
-      <main className="max-h-screen w-screen">
+      <main className="max-h-screen w-screen font-serif">
         <SectionCom className="grid max-h-screen w-full grid-cols-12 overflow-hidden text-[#F8F2DE]">
           <SectionCom className="col-span-5 max-h-screen w-full bg-gradient-to-tl from-slate-950 to-green-900">
             <Home />
