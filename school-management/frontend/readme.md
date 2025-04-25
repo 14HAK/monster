@@ -1,6 +1,6 @@
-<img src="./_assets/frontend.png" alt="isolated" width="full" style="margin: 0 auto;"/>
+<img src="./public/image/readme/school-management-syatem-frontend.jpg" alt="isolated" width="full" style="margin: 0 auto;"/>
 
-# Challenge One: [ demo project name )
+# Shool Management System Frontend
 
 ## **Version:** 1.0.0
 
@@ -10,54 +10,51 @@
 
 **Author:** Dulon Mahadi Molla  
 **Affiliation:** Student Of CSE.  
-**Location:** Narayanganj, Casara- Dhaka.
+**Location:** Dhaka.
 
 # Project Setup :
 
-- Clone This Project From Here : [Github](https://github.com/14HAK/monster.git)
+- Shool Management System : [Click Here](https://github.com/14HAK/monster/tree/master/school-management)
 ```javascript
-yarn
-yarn dev // check package.json: script
+git clone git@github.com:14HAK/monster.git git@github.com:14HAK/monster.git school-management
+cd school-management
+code .
+
+yarn install
+yarn run dev
 ```
-# Project Folder Structure :
-
-```javascript
-Demo-Project-Design/
-├── public/ 📂
-
-│ └── index.html 📝
-
-├── src/ 📂
-
-│ ├── index.jsx 📝
-│ └── App.jsx 📝
-
-├── package.json 📝
-```
-
-
 
 # Project Overview :
-- **Try Your Own:**
 
-  - 😉
+```javascript
+// Step 1:
+* develops a folder structure first inside "src" folder.
 
+frontend/
+├── src/
+│ ├── router/
+│ ├── layouts/
+│ └── pages/
+│ └── components/
+├── package.json
 
+* inside "layouts" folder carry "AccessLayout.tsx", "StudentLayout.tsx", "AdminLayout.tsx".
 
-# Layout Tags :
-<header> - Defines a header for a document or a section
-<nav> - Defines a set of navigation links
-<main> -  tag specifies the main content of a document.
-<section> - Defines a section in a document
-<article> - Defines an independent, self-contained content
-<aside> - Defines content aside from the content (like a sidebar)
-<footer> - Defines a footer for a document or a section
-<details> - Defines additional details that the user can open and close on demand
-<summary> - Defines a heading for the <details> element
+* inside "router" folder full of project "router" setup using "react-router-dom".
 
-# Packages [yarn environment] :
+* inside "pages" folder some pages included "Home.tsx", "About.tsx", "Contact.tsx", "login", "Registration.tsx".
 
-[![NPM Version][npm-image]][npm-url]
+* install "ShadCn-UI" in this "School Management frontend" web sites.
 
-[npm-image]: https://badgen.net/npm/v/batch
-[npm-url]: https://npmjs.org/package/batch
+* inside "components" we have some custom components like "Section.tsx" and others have "ShadCn-UI" components.
+
+// Step 2:
+
+```
+
+# Packages [ yarn environment ]:
+
+```html
+node, express, react
+
+```

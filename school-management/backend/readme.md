@@ -1,94 +1,62 @@
-<img src="./_assets/backend.png" alt="isolated" width="full" style="margin: 0 auto;"/>
+<img src="./public/image/readme/school-management-syatem-frontend.jpg" alt="isolated" width="full" style="margin: 0 auto;"/>
 
-# Demo Backend System Design
+# Shool Management System Frontend
 
 ## **Version:** 1.0.0
 
-## 24-Jan-2025.
+## **Date:** 24-Jan-2025.
 
-```javascript
-Author: Dulon Mahadi Molla
-Affiliation: Student Of CSE.
-Location: Narayanganj, Casara- Dhaka.
-```
+---
+
+**Author:** Dulon Mahadi Molla  
+**Affiliation:** Student Of CSE.  
+**Location:** Dhaka.
 
 # Project Setup :
 
-- Clone This Project From Here : [Github](https://github.com/14HAK/monster.git)
+<!-- todo ekhane ei backend er readme.md file ta thik korte hobe -->
 
+- Shool Management System : [Click Here](https://github.com/14HAK/monster/tree/master/school-management)
 ```javascript
-yarn
-yarn dev // check package.json: script
-```
+git clone git@github.com:14HAK/monster.git git@github.com:14HAK/monster.git school-management
+cd school-management
+code .
 
-# .env :
-
-```javascript
-SERVER_PORT = '8000'
-MONGODB_URI = 'mongodb+srv://<db_username>:<db_password>@cluster10.hju5h.mongodb.net/<database_name>?'
-NODE_ENVIRONMENT = 'development'
-JWT_SECRET = 'your_secret_here'
-FRONTEND_HOST_URL = 'http://localhost:5173/'
-```
-
-# Project Folder Structure :
-
-```javascript
-Backend-System-Design/
-
-├── src/ 📂
-
-│ ├── app/ 📂
-
-│ └── app.ts 📄
-│ └── server.ts 📄
-
-├── package.json 📄
-├── yarn.lock 📄
-
-└── tsconfig.json 📄
-└── eslint.config.mjs 📄
-
-├── .env 📄
-├── .gitignore 📄
-└── .prettierignore 📄
-└── readme.md 📄
+yarn install
+yarn run dev
 ```
 
 # Project Overview :
 
 ```javascript
-project system overview [like description of project roadmap]
+// Step 1:
+* develops a folder structure first inside "src" folder.
 
-1. web apps system instruction.
+frontend/
+├── src/
+│ ├── router/
+│ ├── layouts/
+│ └── pages/
+│ └── components/
+├── package.json
+
+* inside "layouts" folder carry "AccessLayout.tsx", "StudentLayout.tsx", "AdminLayout.tsx".
+
+* inside "router" folder full of project "router" setup using "react-router-dom".
+
+* inside "pages" folder some pages included "Home.tsx", "About.tsx", "Contact.tsx", "login", "Registration.tsx".
+
+* install "ShadCn-UI" in this "School Management frontend" web sites.
+
+* inside "components" we have some custom components like "Section.tsx" and others have "ShadCn-UI" components.
+
+// Step 2:
+
 ```
 
-# API Endpoints :
+# Packages [ yarn environment ]:
 
-### main route path :
+```html
+node, express, react
 
-```javascript
-app.use('/api/v1', router);
 ```
-
-### Create User & Authentication :
-
-```javascript
-authRouter
-    .route('/auth/signup')
-    .post(userSignup);
-
-authRouter
-  .route('/auth/signin')
-  .post(userSignin);
-
-// with authentication and authorization:
-userRouter
-  .route('/services/user')
-  .get(authMiddleware, isAuthenticate(['admin']), getUsers);
-```
-
-# Packages [ typeScript and yarn environment ] :
-
-express / typeScript / bcrypt/ cors/ dotenv / mongoose / jsonwebtoken /
-http-status / ts-node-dev / zod / eslint / prettier /
