@@ -3,6 +3,7 @@
 **node_modules/
 
 *_assets/
+*_assets/
 **_assets/
 
 # Environment files
