@@ -3,6 +3,7 @@
 **node_modules/
 
 *_assets/
+*_assets/
 **_assets/
 
 # Environment files
@@ -13,6 +14,10 @@
 .env.production.local
 # Root-level .vscode directory only
 /.vscode/
+
+demo-sketch
+portfolio-project
+practice-practice
 
 # Editor-specific files
 *.txt
