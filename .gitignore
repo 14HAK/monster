@@ -2,10 +2,8 @@
 *node_modules/
 **node_modules/
 
-
-
-*Ecom-backend/
-*Ecom-frontend/
+*_assets/
+**_assets/
 
 # Environment files
 .env

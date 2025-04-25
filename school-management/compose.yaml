@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  # Frontend
+  frontend:
+    depends_on:
+      - backend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - '5173:5173'
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - VITE_REACT_APP_BACKEND_URL=http://localhost:8000/
+
+  # Backend
+  backend:
+    depends_on:
+      - db
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    environment:
+      - SERVER_PORT=8000
+      - MONGODB_URI=mongodb://db:27017/school
+      - NODE_ENVIRONMENT=development
+      - JWT_SECRET=hgsfdgftrjDDE$$$$65
+      - FRONTEND_HOST_URL=http://localhost:5173/
+
+  # MongoDB
+  db:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    volumes:
+      - school:/data/db
+
+volumes:
+  school:
