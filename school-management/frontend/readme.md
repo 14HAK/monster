@@ -38,7 +38,7 @@ frontend/
 │ └── components/
 ├── package.json
 
-* inside "layouts" folder carry "AccessLayout.tsx", "StudentLayout.tsx", "AdminLayout.tsx".
+* inside "layouts" folder carrying "AccessLayout.tsx", "StudentLayout.tsx", "AdminLayout.tsx".
 
 * inside "router" folder full of project "router" setup using "react-router-dom".
 

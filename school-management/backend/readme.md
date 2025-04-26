@@ -1,4 +1,4 @@
-<img src="./public/image/readme/school-management-syatem-frontend.jpg" alt="isolated" width="full" style="margin: 0 auto;"/>
+<img src="./public/image/school-management-system-backend.jpg" alt="isolated" width="full" style="margin: 0 auto;"/>
 
 # Shool Management System Frontend
 
@@ -14,8 +14,6 @@
 
 # Project Setup :
 
-<!-- todo ekhane ei backend er readme.md file ta thik korte hobe -->
-
 - Shool Management System : [Click Here](https://github.com/14HAK/monster/tree/master/school-management)
 ```javascript
 git clone git@github.com:14HAK/monster.git git@github.com:14HAK/monster.git school-management
@@ -30,25 +28,7 @@ yarn run dev
 
 ```javascript
 // Step 1:
-* develops a folder structure first inside "src" folder.
-
-frontend/
-├── src/
-│ ├── router/
-│ ├── layouts/
-│ └── pages/
-│ └── components/
-├── package.json
-
-* inside "layouts" folder carry "AccessLayout.tsx", "StudentLayout.tsx", "AdminLayout.tsx".
-
-* inside "router" folder full of project "router" setup using "react-router-dom".
-
-* inside "pages" folder some pages included "Home.tsx", "About.tsx", "Contact.tsx", "login", "Registration.tsx".
-
-* install "ShadCn-UI" in this "School Management frontend" web sites.
-
-* inside "components" we have some custom components like "Section.tsx" and others have "ShadCn-UI" components.
+* demo "instruction" of backend system.
 
 // Step 2:
 
@@ -57,6 +37,6 @@ frontend/
 # Packages [ yarn environment ]:
 
 ```html
-node, express, react
+node, express, nodemon, 
 
 ```
