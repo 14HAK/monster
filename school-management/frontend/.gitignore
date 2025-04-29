@@ -10,10 +10,12 @@ lerna-debug.log*
 **/node_modules/
 */node_modules/
 **/notes.js
+**/notes.t
 
 **/dist
 **/dist-ssr
 *.local
+
 
 # Editor directories and files
 .vscode/*
@@ -21,7 +23,6 @@ lerna-debug.log*
 .idea
 .DS_Store
 *.suo
-*.ntvs*
-*.njsproj
+
 *.sln
 *.sw?

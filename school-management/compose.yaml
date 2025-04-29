@@ -10,11 +10,11 @@ services:
       dockerfile: Dockerfile
     ports:
       - '5173:5173'
+    environment:
+      - VITE_REACT_APP_BACKEND_URL=http://localhost:8000/
     volumes:
       - ./frontend:/app
       - /app/node_modules
-    environment:
-      - VITE_REACT_APP_BACKEND_URL=http://localhost:8000/
 
   # Backend
   backend:
@@ -25,15 +25,15 @@ services:
       dockerfile: Dockerfile
     ports:
       - '8000:8000'
-    volumes:
-      - ./backend:/app
-      - /app/node_modules
     environment:
       - SERVER_PORT=8000
       - MONGODB_URI=mongodb://db:27017/school
       - NODE_ENVIRONMENT=development
       - JWT_SECRET=hgsfdgftrjDDE$$$$65
       - FRONTEND_HOST_URL=http://localhost:5173/
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
 
   # MongoDB
   db:

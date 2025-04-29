@@ -44,6 +44,20 @@ code .
 
 ```
 
+# Docker Help:
+
+```javascript
+// package install inside container or docker project:
+1. docker compose exec <package_name> yarn install
+
+// or install inside docker image:
+2. docker run -it <image_name> sh
+   docker run -it <image_name> bash
+
+   yarn add <package_name>
+
+```
+
 # Badges:
 
 ```javascript

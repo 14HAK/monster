@@ -46,4 +46,13 @@ COPY . .
 "-> docker-compose up --build"
 "-> docker-compose up"
 
+// package install inside container or docker project:
+"-> docker compose exec <package_name> yarn install"
+
+// or install inside docker image:
+"-> docker run -it <image_name> sh"
+"-> docker run -it <image_name> bash"
+
+
+
 
