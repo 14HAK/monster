@@ -3,10 +3,10 @@ import React from "react";
 const Home = (): React.ReactElement => {
   return (
     <>
-      <h1>Home page</h1>
-      <p>page of Home</p>
+      <h1 className="bg-amber-500 text-6xl text-teal-900">HOME PAGE</h1>
     </>
   );
 };
 
+//todo: home page
 export default Home;

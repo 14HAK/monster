@@ -6,10 +6,7 @@ interface TSectionProps {
   className: string;
 }
 
-const Section = ({
-  children,
-  className,
-}: TSectionProps): React.ReactElement => {
+const Header = ({ children, className }: TSectionProps): React.ReactElement => {
   return (
     <>
       <motion.section className={`${className} `}>{children}</motion.section>
@@ -17,4 +14,4 @@ const Section = ({
   );
 };
 
-export default Section;
+export default Header;

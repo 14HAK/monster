@@ -50,9 +50,24 @@ frontend/
 * inside "components" we have some custom components like "Section.tsx" and others have "ShadCn-UI" components.
 
 // Step 2:
-* design my hole website like "@/components/Section.tsx" and other pages "src/pages/Home.tsx"... all pages.
 
-* advance setup "router/router.tsx" for develop pages routing.
+* structure design "Layout.tsx".
+
+* build page "Home.tsx".
+
+```
+
+# Measurement:
+
+```javascript
+section x: mx-20 / 5rem / 80px
+section y: my-10 / 2.5rem / 40px
+section gap: my-10 / 2.5rem / 40px
+
+Primary color: neutral-900 / #171717
+Secondary color: pink-900 / #861043 (optional)
+
+White color: white / #ffffff
 
 ```
 
