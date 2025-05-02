@@ -5,60 +5,78 @@ import { FiYoutube } from "react-icons/fi";
 import { IoCallOutline, IoNewspaperOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiGoogleLine } from "react-icons/ri";
-import Section from "./Section";
+import { Link } from "react-router-dom";
+import P from "./tags/P";
+import Section from "./tags/Section";
+import Span from "./tags/Span";
 
 const TabUp = (): React.ReactElement => {
   return (
     <>
       <Section className="grid grid-cols-2">
-        <Section className="flex justify-items-start gap-4 bg-red-200 p-1 text-sm font-bold">
+        <Section className="bg-fruity-reddark flex justify-items-start gap-4 p-1 text-sm">
           <Section className="flex items-center justify-center gap-1">
-            <span className="text-xl font-light">
+            <Span className="text-xl font-light">
               <IoCallOutline />
-            </span>
-            <span>+880-1640677464</span>
+            </Span>
+            <Span>
+              <P>+880-1640677464</P>
+            </Span>
           </Section>
 
           <Section className="flex items-center justify-center gap-1">
-            <span className="text-xl font-light">
+            <Span className="text-xl font-light">
               <MdOutlineEmail />
-            </span>
-            <span>moonlightkg@gmail.com</span>
+            </Span>
+            <Span>
+              <P>moonlightkg@gmail.com</P>
+            </Span>
           </Section>
 
           <Section className="flex items-center justify-center gap-1">
-            <span className="text-xl font-light">
+            <Span className="text-md font-light">
               <BsBag />
-            </span>
-            <span>Cart</span>
+            </Span>
+            <Span>
+              <P>Cart</P>
+            </Span>
           </Section>
         </Section>
 
-        <Section className="flex items-center justify-center gap-4 bg-red-300 p-1 text-sm font-bold">
+        <Section className="bg-fruity-reddark flex items-center justify-center gap-4 p-1 text-sm font-bold">
           <Section className="flex items-center justify-center gap-4">
-            <span className="text-xl font-light">
+            <Span className="text-xl font-light">
               <RiGoogleLine />
-            </span>
-            <span className="text-xl font-light">
+            </Span>
+            <Span className="text-xl font-light">
               <FiYoutube />
-            </span>
-            <span className="text-xl font-light">
+            </Span>
+            <Span className="text-xl font-light">
               <FaWhatsapp />
-            </span>
+            </Span>
           </Section>
 
           <Section className="flex items-center justify-center gap-1">
-            <span className="text-xl font-light">
+            <Span className="text-md font-light">
               <FaRegUser />
-            </span>
-            <span>Login/Resister</span>
+            </Span>
+            <Span className="flex">
+              <Link to={"/login"}>
+                <P>Login/</P>
+              </Link>
+              <Link to={"/resister"}>
+                <P>Resister</P>
+              </Link>
+            </Span>
           </Section>
 
           <Section className="flex items-center justify-center gap-1">
-            <span className="text-xl font-light">
+            <Span className="text-md font-light">
               <IoNewspaperOutline />
-            </span>
-            <span>Online Admission</span>
+            </Span>
+            <Span>
+              <P>Online Admission</P>
+            </Span>
           </Section>
         </Section>
       </Section>

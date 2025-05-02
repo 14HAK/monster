@@ -1,4 +1,4 @@
-<img src="./public/image/readme/school-management-syatem-frontend.jpg" alt="isolated" width="full" style="margin: 0 auto;"/>
+<img src="./src/assets/readme/school-management-syatem-frontend.jpg" alt="isolated" width="full" style="margin: 0 auto;"/>
 
 # Shool Management System Frontend
 
@@ -11,6 +11,10 @@
 **Author:** Dulon Mahadi Molla  
 **Affiliation:** Student Of CSE.  
 **Location:** Dhaka.
+
+# Color Palette:
+
+<img src="./src/assets/color-palette/Tutti Frutti.png" alt="isolated" width="full" style="margin: 0 auto;"/>
 
 # Project Setup :
 
@@ -40,39 +44,54 @@ frontend/
 ├── package.json
 
 * inside "layouts" folder carrying "Layout.tsx" and "Dashboard.tsx".
-
 * inside "router" folder full of project "router" setup using "react-router-dom".
-
 * inside "pages" folder some pages included "Home.tsx", "About.tsx", "Contact.tsx", "Login.tsx", "Registration.tsx".
-
 * install "ShadCn-UI" in this "School Management frontend" web sites.
-
 * inside "components" we have some custom components like "Section.tsx" and others have "ShadCn-UI" components.
 
 // Step 2:
 
 * structure design "Layout.tsx".
-
-* build page "Home.tsx".
+* sample component design "TabUp.tsx".
+// * build page "Home.tsx".
 
 ```
 
 # Measurement:
 
 ```javascript
-section x: mx-20 / 5rem / 80px
-section y: my-10 / 2.5rem / 40px
-section gap: my-10 / 2.5rem / 40px
+// Font:
+Google Font: Nunito(200-1000 and italic)(use locally)(https://fonts.google.com/specimen/Nunito)
 
-Primary color: neutral-900 / #171717
-Secondary color: pink-900 / #861043 (optional)
+// Typography:
+heading: xl, 3xl, 5xl, 6xl, 7xl, 9xl.(font-semibold, tracking-wide)
+paragraph: xl, md, sm.(font-light, tracking-wider)
 
-White color: white / #ffffff
+// Colors:
+fruity-whitepower: #fefefa
+fruity-blacksmooth: #2b2b2b
 
+fruity-redlight: #f3b7ad
+fruity-greenlight: #9dbdba
+fruity-bluelight: #93aec1
+fruity-reddark: #ec6a52
+fruity-yellowdark: #f8b042
+
+// Responsive(Tailwind):
+sm:	40rem (640px)	@media (width >= 40rem)
+md:	48rem (768px)	@media (width >= 48rem)
+lg:	64rem (1024px)	@media (width >= 64rem)
+xl:	80rem (1280px)	@media (width >= 80rem)
+2xl:	96rem (1536px)	@media (width >= 96rem)
+
+// Section margin xy:
+every master section margin x: mx-16
+every master section margin y: mx-12
 ```
 
 # Packages [ yarn environment ]:
 
 ```html
-node, express, react
+vite-react, react-router-dom, react-icons, redux, redux/toolkit, framer-motion,
+shad-cn UI, @fontsource/nunito, @fontsource/poppins,
 ```

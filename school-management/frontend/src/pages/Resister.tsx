@@ -1,6 +1,6 @@
 import React from "react";
 
-const Registration = (): React.ReactElement => {
+const Register = (): React.ReactElement => {
   return (
     <>
       <h1>Registration page</h1>
@@ -9,4 +9,4 @@ const Registration = (): React.ReactElement => {
   );
 };
 
-export default Registration;
+export default Register;
