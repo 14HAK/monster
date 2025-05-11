@@ -1,10 +1,12 @@
+import Section from "@/components/tags/Section";
 import React from "react";
 
 const Login = (): React.ReactElement => {
   return (
     <>
-      <h1>Login page</h1>
-      <p>page of Login</p>
+      <Section className="grid grid-cols-12 grid-rows-1">
+        <Section className="col-span-12 bg-red-600">Login1</Section>
+      </Section>
     </>
   );
 };

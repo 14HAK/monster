@@ -19,8 +19,9 @@
 @theme inline {
   /** custom styles */
   /* Font: */
-
   --font-nunito: "Nunito", sans-serif;
+  --font-body: "Nunito", sans-serif;
+  --font-display: "Nunito", sans-serif;
   /* --font-weight-it: 1; */
   --font-weight-nunito200: 200;
   --font-weight-nunito300: 300;
@@ -158,3 +159,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* todo SCSS apply: */
+/* .base-transition {
+  @apply transition-all duration-300 ease-in-out;
+} */

@@ -9,7 +9,7 @@ interface TProps {
 const H1 = ({ children, className }: TProps): React.ReactElement => {
   return (
     <>
-      <motion.h1 className={`${className} font-semibold tracking-wide`}>
+      <motion.h1 className={`${className} font-semibold tracking-wider`}>
         {children}
       </motion.h1>
     </>

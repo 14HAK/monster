@@ -1,12 +1,15 @@
 /* eslint-disable react/react-in-jsx-scope */
+
 import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
-const Layout = lazy(() => import("../layouts/Layout"));
-const Home = lazy(() => import("../pages/Home"));
-const Contact = lazy(() => import("../pages/Contact"));
-const About = lazy(() => import("../pages/About"));
-const Resister = lazy(() => import("../pages/Resister"));
-const Login = lazy(() => import("../pages/Login"));
+const Layout = lazy(() => import("@/layouts/Layout"));
+const Section = lazy(() => import("@/components/tags/Section"));
+const Home = lazy(() => import("@/pages/Home"));
+const About = lazy(() => import("@/pages/About"));
+const Contact = lazy(() => import("@/pages/Contact"));
+const Blog = lazy(() => import("@/pages/Blog"));
+const Resister = lazy(() => import("@/pages/Resister"));
+const Login = lazy(() => import("@/pages/Login"));
 
 const router = createBrowserRouter([
   {
@@ -31,11 +34,11 @@ const router = createBrowserRouter([
         element: (
           <Suspense
             fallback={
-              <div className="flex h-screen items-center justify-center">
-                <div className="rounded-lg p-6 text-4xl font-light text-red-500">
+              <Section className="flex h-screen items-center justify-center">
+                <Section className="rounded-lg p-6 text-4xl font-light text-red-500">
                   loading...
-                </div>
-              </div>
+                </Section>
+              </Section>
             }
           >
             <Home />
@@ -59,6 +62,22 @@ const router = createBrowserRouter([
         ),
       },
       {
+        path: "/about",
+        element: (
+          <Suspense
+            fallback={
+              <div className="flex h-screen items-center justify-center">
+                <div className="rounded-lg p-6 text-4xl font-light text-red-500">
+                  loading...
+                </div>
+              </div>
+            }
+          >
+            <About />
+          </Suspense>
+        ),
+      },
+      {
         path: "/contact",
         element: (
           <Suspense
@@ -75,7 +94,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/about",
+        path: "/blog",
         element: (
           <Suspense
             fallback={
@@ -86,7 +105,7 @@ const router = createBrowserRouter([
               </div>
             }
           >
-            <About />
+            <Blog />
           </Suspense>
         ),
       },

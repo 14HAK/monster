@@ -2,27 +2,19 @@ import { motion } from "framer-motion";
 import React from "react";
 
 interface TProps {
-  children: React.ReactNode;
   className?: string;
   src: string;
   alt: string;
 }
 
-const Image = ({
-  children,
-  className,
-  src,
-  alt,
-}: TProps): React.ReactElement => {
+const Image = ({ className, src, alt }: TProps): React.ReactElement => {
   return (
     <>
       <motion.img
+        className={`${className} h-auto w-full object-cover`}
         src={`${src}`}
         alt={`${alt}`}
-        className={`${className} h-full w-full object-cover`}
-      >
-        {children}
-      </motion.img>
+      ></motion.img>
     </>
   );
 };

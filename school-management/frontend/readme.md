@@ -53,6 +53,9 @@ frontend/
 
 * structure design "Layout.tsx".
 * sample component design "TabUp.tsx".
+* customize Tailwind css theme(typography, colors, google fonts,) added.
+* some setUp problem fixes.
+* create and added new "NavBar.tsx" for navigation.
 // * build page "Home.tsx".
 
 ```
@@ -66,6 +69,7 @@ Google Font: Nunito(200-1000 and italic)(use locally)(https://fonts.google.com/s
 // Typography:
 heading: xl, 3xl, 5xl, 6xl, 7xl, 9xl.(font-semibold, tracking-wide)
 paragraph: xl, md, sm.(font-light, tracking-wider)
+size measurement: mx-8: (16, 24, 32, 40, 48, 56, 64, 72, 80 ).
 
 // Colors:
 fruity-whitepower: #fefefa
@@ -93,5 +97,5 @@ every master section margin y: mx-12
 
 ```html
 vite-react, react-router-dom, react-icons, redux, redux/toolkit, framer-motion,
-shad-cn UI, @fontsource/nunito, @fontsource/poppins,
+shad-cn UI, @fontsource/nunito, @fontsource/poppins, vite-plugin-svgr,
 ```
