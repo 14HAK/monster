@@ -13,10 +13,10 @@ import Span from "./tags/Span";
 const TabUp = (): React.ReactElement => {
   return (
     <>
-      <Section className="grid grid-cols-2">
-        <Section className="bg-fruity-reddark flex justify-items-start gap-4 px-4 text-sm">
-          <Section className="flex items-center justify-center gap-1">
-            <Span className="text-md font-light">
+      <Section className="xs:hidden md:grid md:grid-cols-2">
+        <Section className="bg-fruity-reddark flex justify-items-start gap-4 px-4 text-sm 2xl:text-xl">
+          <Section className="items-center justify-center gap-1 md:hidden xl:flex">
+            <Span className="text-md font-light 2xl:text-xl">
               <IoCallOutline />
             </Span>
             <Span>
@@ -25,7 +25,7 @@ const TabUp = (): React.ReactElement => {
           </Section>
 
           <Section className="flex items-center justify-center gap-1">
-            <Span className="text-md font-light">
+            <Span className="text-md font-light 2xl:text-xl">
               <MdOutlineEmail />
             </Span>
             <Span>
@@ -34,7 +34,7 @@ const TabUp = (): React.ReactElement => {
           </Section>
 
           <Section className="flex items-center justify-center gap-1">
-            <Span className="text-md font-light">
+            <Span className="text-md font-light 2xl:text-xl">
               <BsBag />
             </Span>
             <Span>
@@ -45,7 +45,7 @@ const TabUp = (): React.ReactElement => {
 
         <Section className="bg-fruity-reddark flex items-center justify-center gap-4 p-1 text-sm font-bold">
           <Section className="flex items-center justify-center gap-4">
-            <Span className="text-xl font-light">
+            <Span className="text-xl font-light 2xl:text-2xl">
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
@@ -54,7 +54,7 @@ const TabUp = (): React.ReactElement => {
                 <RiGoogleLine />
               </Link>
             </Span>
-            <Span className="text-xl font-light">
+            <Span className="text-xl font-light 2xl:text-2xl">
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
@@ -63,7 +63,7 @@ const TabUp = (): React.ReactElement => {
                 <FiYoutube />
               </Link>
             </Span>
-            <Span className="text-xl font-light">
+            <Span className="text-xl font-light 2xl:text-2xl">
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
@@ -75,26 +75,28 @@ const TabUp = (): React.ReactElement => {
           </Section>
 
           <Section className="flex items-center justify-center gap-1">
-            <Span className="text-md font-light">
+            <Span className="text-md font-light 2xl:text-xl 2xl:font-normal">
               <FaRegUser />
             </Span>
-            <Span className="flex">
+            <Span className="md:hidden xl:flex">
               <Link to={"/login"}>
-                <P className="font-light">Login/</P>
+                <P className="font-light 2xl:font-normal">Login/</P>
               </Link>
               <Link to={"/resister"}>
-                <P className="font-light">Resister</P>
+                <P className="font-light 2xl:font-normal">Resister</P>
               </Link>
             </Span>
           </Section>
 
           <Section className="flex items-center justify-center gap-1">
-            <Span className="text-md font-light">
+            <Span className="text-md font-light 2xl:text-xl">
               <IoNewspaperOutline />
             </Span>
             <Span>
               <Link to={"/"}>
-                <P className="text-md font-light">Online Admission</P>
+                <P className="text-md font-light 2xl:text-xl">
+                  Online Admission
+                </P>
               </Link>
             </Span>
           </Section>

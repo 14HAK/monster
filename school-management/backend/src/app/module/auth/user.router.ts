@@ -12,3 +12,5 @@ export default authRouter;
 // userRouter
 //   .route('/services/slots')
 //   .post(authMiddleware, isAuthenticate(['admin']), createSlots);
+
+

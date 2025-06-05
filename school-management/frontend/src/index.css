@@ -43,6 +43,9 @@
   --color-fruity-reddark: #ec6a52;
   --color-fruity-yellowdark: #f8b042;
 
+  /* Responsive breakpoint */
+  --breakpoint-xs: 20rem;
+
   /** custom styles */
 
   --radius-sm: calc(var(--radius) - 4px);
@@ -115,6 +118,15 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
 }
 
 .dark {
@@ -149,6 +161,15 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+  --sidebar-background: 240 5.9% 10%;
+  --sidebar-foreground: 240 4.8% 95.9%;
+  --sidebar-primary: 224.3 76.3% 48%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 240 3.7% 15.9%;
+  --sidebar-accent-foreground: 240 4.8% 95.9%;
+  --sidebar-border: 240 3.7% 15.9%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
 }
 
 @layer base {
@@ -160,7 +181,65 @@
   }
 }
 
-/* todo SCSS apply: */
+/* ---------------------------------custom notes------------------------ */
+/*todo: */
+/** SCSS apply: */
 /* .base-transition {
   @apply transition-all duration-300 ease-in-out;
+} */
+
+/** how to add custome veriable or style in Tailwind css version 4.0 */
+/*! convert: "HEX: #000000" color to "oklch(0.99 0.02 95)" colors. 
+LINK: "https://oklch.com/#0.7,0.1751,6.88,100"        */
+
+/*! how to apply in: src/index.css: */
+/* :root {
+  --warning: oklch(0.84 0.16 84);
+  --warning-foreground: oklch(0.28 0.07 46);
+}
+
+.dark {
+  --warning: oklch(0.41 0.11 46);
+  --warning-foreground: oklch(0.99 0.02 95);
+}
+
+@theme inline {
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+} */
+
+/*! uses: 
+<div className="bg-warning text-warning-foreground" /> */
+
+/* ------------------------------ */
+
+/* * dark mode themming for vite using shad cn ui: */
+/* dark mode */
+/* link: "https://ui.shadcn.com/docs/dark-mode/vite"  */
+
+/* ------------------------------ */
+
+/* * framar motion animation start when goes to this section: */
+/* import { motion, useInView } from 'framer-motion'
+import { useRef } from 'react'
+
+const RepeatingSection = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: false, margin: '-50px' })
+
+  return (
+    <motion.div
+      ref={ref}
+      animate={isInView ? { y: [0, -10, 0] } : {}}
+      transition={{
+        duration: 1,
+        repeat: Infinity,
+        repeatType: 'loop',
+        ease: 'easeInOut',
+      }}
+      style={{ marginTop: '200px', padding: '20px', background: '#f0f0f0' }}
+    >
+      <h2>This section animates when visible</h2>
+    </motion.div>
+  )
 } */

@@ -2,6 +2,7 @@
 import { StrictMode, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
+// import Example from "./components/Example";
 import "./index.css";
 import router from "./router/router";
 
@@ -18,5 +19,6 @@ createRoot(document.getElementById("root")!).render(
     >
       <RouterProvider router={router} />
     </Suspense>
+    {/* <Example /> */}
   </StrictMode>,
 );

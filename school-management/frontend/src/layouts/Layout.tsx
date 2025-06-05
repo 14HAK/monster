@@ -1,6 +1,7 @@
 import Foot from "@/components/Foot";
 import Head from "@/components/Head";
 import Navbar from "@/components/Navbar";
+import ResponsiveNav from "@/components/ResponsiveNav";
 import TabUp from "@/components/TabUp";
 import Footer from "@/components/tags/Footer";
 import Header from "@/components/tags/Header";
@@ -27,9 +28,13 @@ const Layout = (): React.ReactElement => {
           >
             <div className="absolute inset-0 -z-10 bg-gradient-to-l from-slate-950 to-slate-950 opacity-50"></div>
             <Nav className="mx-32">
-              <Navbar />
+              <Section className="xs:hidden xl:block">
+                <Navbar />
+              </Section>
+              <Section className="xs:block xl:hidden">
+                <ResponsiveNav />
+              </Section>
             </Nav>
-
             <Head />
           </Header>
         </Section>
@@ -47,7 +52,6 @@ const Layout = (): React.ReactElement => {
             <Foot />
           </Footer>
         </Section>
-        {/* <Example /> */}
       </Section>
     </>
   );

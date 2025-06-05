@@ -3,6 +3,7 @@ import {
   Card,
   CardAction,
   CardContent,
+  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -14,15 +15,16 @@ import React from "react";
 const Example: React.FC = () => {
   return (
     <>
-      <Card className="w-full max-w-sm">
-        <CardHeader>
-          <CardTitle>Confirm Action</CardTitle>
+      <Card className="w-full max-w-sm border-0 shadow-2xl outline-0">
+        <CardHeader className="p-0">
+          <CardTitle className="p-0">Confirm Action</CardTitle>
+          <CardDescription className="p-0">Confirm Action</CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="p-0">
           <p>Are you sure you want to delete this item?</p>
         </CardContent>
-        <CardFooter>
-          <CardAction>
+        <CardFooter className="p-0">
+          <CardAction className="p-0">
             <Button variant="outline">Cancel</Button>
             <Button variant="destructive">Delete</Button>
           </CardAction>

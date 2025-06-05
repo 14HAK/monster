@@ -6,10 +6,6 @@ import { TUSER, UserModel } from './user.interface';
 //user mongoose schema
 const userSchema = new Schema<TUSER, UserModel>(
   {
-    name: {
-      type: String,
-      required: [true, 'name must be required']
-    },
     email: {
       type: String,
       required: [true, 'email must be required and unique'],
@@ -21,7 +17,7 @@ const userSchema = new Schema<TUSER, UserModel>(
     },
     role: {
       type: String,
-      enum: ['admin', 'user'],
+      enum: ['admin', 'user', 'teacher'],
       required: [true, 'role must be required']
     }
   },

@@ -56,6 +56,8 @@ frontend/
 * customize Tailwind css theme(typography, colors, google fonts,) added.
 * some setUp problem fixes.
 * create and added new "NavBar.tsx" for navigation.
+* fully design "Home.tsx" page.
+* @/component new: "" todo:
 // * build page "Home.tsx".
 
 ```
@@ -91,6 +93,10 @@ xl:	80rem (1280px)	@media (width >= 80rem)
 // Section margin xy:
 every master section margin x: mx-16
 every master section margin y: mx-12
+
+// Perfect Image Ratio:
+ventricle ratio [Width*Height]( || ): 408px * 612px
+horizontal ratio [Width*Height]( === ): 800px * 534px
 ```
 
 # Packages [ yarn environment ]:
