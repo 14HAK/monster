@@ -1,0 +1,16 @@
+{
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"devDependencies": {
+		"lodash": "^4.17.21",
+		"nodemon": "^3.1.10"
+	},
+	"name": "js",
+	"version": "1.0.0",
+	"description": "this is a tutorial course with javaScript",
+	"main": "index.js",
+	"author": "dulon mahadi",
+	"license": "MIT"
+}
