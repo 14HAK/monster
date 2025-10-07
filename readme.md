@@ -1,4 +1,4 @@
-<img src="./_image/monster.png" alt="isolated" width="full" style="margin: 0 auto;"/>
+<img src="./_image/monsterme.png" alt="isolated" width="full" style="margin: 0 auto;"/>
 
 # Monster Practices && Projects
 
