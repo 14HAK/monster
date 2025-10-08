@@ -46,20 +46,62 @@
 // var names = 'dulon mahadi molla';
 
 // //* Phase 5:
-// Temporal Dead Zone (TDZ).
-console.log(age); // error: cannot access 'age' before initialization.
-let age = 35;
-// this is TDZ. so, always write clean and serialized code.
+// // Temporal Dead Zone (TDZ):
+// console.log(age); // error: cannot access 'age' before initialization.
+// let age = 35;
+// // this is TDZ. so, always write clean and serialized code.
 
-// Hoisting:
-// hoisting means, moving declaration to the top and initialization stays in place.
-// suppose you write code,
-var salary = 50000;
+// // Hoisting:
+// // hoisting means, moving declaration to the top and initialization stays in place.
+// // suppose you write code,
+// var salary = 50000;
 
-// when execute this code compiler read and write this code like this,
-var salary = undefined; // execute top of declaration
-salary = 50000; // execute in place of initialization
-// so this is called hoisting.
+// // when execute this code compiler read and write this code like this,
+// var salary = undefined; // execute top of declaration
+// salary = 50000; // execute in place of initialization
+// // so this is called hoisting.
 
-// only declaration is hoisted, not the initialization.
-// var is hoisted, let and const are not hoisted.
+// // only declaration is hoisted, not the initialization.
+// // var is hoisted, let and const are not hoisted.
+
+//* Phase 6:
+// Data Type:
+// Primitive data types.
+// string, number, boolean, Symbol, BigInt, null, undefined
+let name = 'dulon mahadi'; //string
+let age = 35.25; //number
+let isMarrid = false; //boolean
+let id = Symbol('12345'); //Symbol
+let bigNumber = 1234567890123456789012345678901234567890n;
+
+// Reference data types.
+// object > {}, array > [], function > ()
+let person = { name: 'dulon', age: 35 }; //object
+let colors = ['red', 'green', 'blue']; //array
+function add(num1, num2) {
+	return num1 + num2;
+} //function
+console.log(add(25, 35));
+
+// DataTypes Identifier:
+const pi = 3.1415;
+console.log(typeof pi); //number)
+
+// Type Coercion (Auto-Conversion):
+'5' + 1; // "51" → number converted to string
+'5' - 1; // 4 → string converted to number
+true + 1; // 2
+null + 1; // 1
+undefined + 1; // NaN
+typeof null is "object" // — this is a bug.
+
+// Loose vs Strict Equality:
+5 == '5'; // true // comparison only values.
+5 === '5'; // false // comparison values and types.
+
+// NaN – Not a Number
+NaN === NaN; // false.
+
+// Truthy and Falsy Values:
+false, 0, "", null, undefined, NaN // falsy values.
+"0", "false", [], {}, function() // everything else is truthy including these values.
