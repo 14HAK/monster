@@ -197,7 +197,7 @@
 // // if age is 18 or more, canVote is 'Yes', otherwise 'No'.
 
 // //* Phase 10:
-// // Control Flow: Loops:
+// // Control Flow:
 // // if, else if, else.
 // if (10 > 12) {
 // 	console.log('condition proves true!');
@@ -220,5 +220,48 @@
 // 		console.log('You are fail!');
 // }
 
-//* Phase 11:
-// Loops:
+// //* Phase 11:
+// // Loops:
+// // for loops.
+// for (let i = 10; i > 1; i--) {
+// 	console.log(i);
+// }
+
+// // while loops.
+// let i = 10;
+// while (i >= 1) {
+// 	console.log(i);
+// 	i--;
+// }
+
+// // do-while loops.
+// let i = 10;
+// do {
+// 	console.log(i);
+// 	i--;
+// } while (i >= 1);
+
+// // break and continue.
+// for (let i = 1; i <= 10; i++) {
+// 	if (i === 5) continue; // continue skips 5
+// 	console.log(i);
+// }
+
+// // for-of.
+// for (let char of 'dulon') {
+// 	console.log(char);
+// }
+
+// // forEach.
+// let nums = [10, 20, 30, 'Dulon Mahadi Molla'];
+// nums.forEach((num) => {
+// 	console.log(num);
+// });
+
+// // for-in // Objects (and arrays if needed)
+// let person = { name: 'Dulon', age: 35, city: 'Dhaka' };
+// for (let i in person) {
+// 	console.log(i + ': ' + person[i]);
+// }
+
+// //* Phase 12:
