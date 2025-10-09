@@ -54,6 +54,9 @@
 // // Hoisting:
 // // hoisting means, moving declaration to the top and initialization stays in place.
 // // suppose you write code,
+// var is hoisted and set to undefined.
+// let and const are hoisted but not initialized — so accessing them early gives.
+
 // var salary = 50000;
 
 // // when execute this code compiler read and write this code like this,
@@ -64,44 +67,67 @@
 // // only declaration is hoisted, not the initialization.
 // // var is hoisted, let and const are not hoisted.
 
-//* Phase 6:
-// Data Type:
-// Primitive data types.
-// string, number, boolean, Symbol, BigInt, null, undefined
-let name = 'dulon mahadi'; //string
-let age = 35.25; //number
-let isMarrid = false; //boolean
-let id = Symbol('12345'); //Symbol
-let bigNumber = 1234567890123456789012345678901234567890n;
+// //* Phase 6:
+// // Data Type:
+// // Primitive data types.
+// // string, number, boolean, Symbol, BigInt, null, undefined
+// let name = 'dulon mahadi'; //string
+// let age = 35.25; //number
+// let isMarrid = false; //boolean
+// let id = Symbol('12345'); //Symbol
+// let bigNumber = 1234567890123456789012345678901234567890n;
 
-// Reference data types.
-// object > {}, array > [], function > ()
-let person = { name: 'dulon', age: 35 }; //object
-let colors = ['red', 'green', 'blue']; //array
-function add(num1, num2) {
-	return num1 + num2;
-} //function
-console.log(add(25, 35));
+// // Reference data types.
+// // object > {}, array > [], function > ()
+// let person = { name: 'dulon', age: 35 }; //object
+// let colors = ['red', 'green', 'blue']; //array
+// function add(num1, num2) {
+// 	return num1 + num2;
+// } //function
+// console.log(add(25, 35));
 
-// DataTypes Identifier:
-const pi = 3.1415;
-console.log(typeof pi); //number)
+// // DataTypes Identifier:
+// const pi = 3.1415;
+// console.log(typeof pi); //number)
 
-// Type Coercion (Auto-Conversion):
-'5' + 1; // "51" → number converted to string
-'5' - 1; // 4 → string converted to number
-true + 1; // 2
-null + 1; // 1
-undefined + 1; // NaN
-typeof null is "object" // — this is a bug.
+// // Type Coercion (Auto-Conversion):
+// '5' + 1; // "51" → number converted to string
+// '5' - 1; // 4 → string converted to number
+// true + 1; // 2
+// null + 1; // 1
+// undefined + 1; // NaN
+// typeof null is "object" // — this is a bug.
 
-// Loose vs Strict Equality:
-5 == '5'; // true // comparison only values.
-5 === '5'; // false // comparison values and types.
+// // Type checking:
+// let a = [];
+// console.log(a instanceof Array); // true
+// console.log(a instanceof Object); // true
+// console.log(typeof a); // object
 
-// NaN – Not a Number
-NaN === NaN; // false.
+// // Loose vs Strict Equality:
+// 5 == '5'; // true // comparison only values.
+// 5 === '5'; // false // comparison values and types.
 
-// Truthy and Falsy Values:
-false, 0, "", null, undefined, NaN // falsy values.
-"0", "false", [], {}, function() // everything else is truthy including these values.
+// // NaN – Not a Number
+// NAN === "number"; // true
+// NaN === NaN; // false.
+
+// // Truthy and Falsy Values:
+// false, 0, "", null, undefined, NaN // falsy values.
+// "0", "false", [], {}, function() // everything else is truthy including these values.
+
+// //* Phase 8:
+// // Practice:
+// const name = 'Dulon Mahadi Molla';
+// const city = 'Dhaka';
+// let age = 30;
+
+// let x = 5;
+// let x = 10;
+// console.log(x);
+
+// console.log(count);
+// var count = 42;
+
+// console.log(cars);
+// let cars = 42;
