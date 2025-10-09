@@ -265,3 +265,82 @@
 // }
 
 // //* Phase 12:
+// // Functions:
+// // function declarations.
+// function sum(a, b) {
+// 	// a,b is a parameter.
+// 	return a + b;
+// }
+// console.log(sum(5, 10)); // 5,10 is an argument.
+
+// // function expressions.
+// const sum = function (a, b) {
+// 	return a + b;
+// };
+// console.log(sum(5, 10));
+
+// // arrow functions.
+// const sum = (a, b) => a + b;
+// console.log(sum(5, 10));
+
+// rest+spread.
+// function sum(...nums) { //functions with rest parameter.
+// 	return nums.reduce((acc, val) => acc + val, 0);
+// }
+// console.log(sum(5, 10, 10));
+
+// function sum(...nums) {
+// 	return nums.reduce((acc, val) => acc + val, 0);
+// }
+// let qualities = [5, 10, 10];
+// console.log(sum(...qualities)); //functions with spread operator.
+
+// // first-class functions.
+// function shout(msg) {
+// 	return msg.toUpperCase();
+// }
+
+// function processMessage(fn) {
+// 	console.log(fn('hello world'));
+// }
+// processMessage(shout);
+
+// // higher-order functions.
+// function createMultiplier(x) {
+// 	return function (y) {
+// 		return x * y;
+// 	};
+// }
+// let double = createMultiplier(2);
+// console.log(double(5)); // 10
+
+// Closures & Lexical Scope.
+// function outer() {
+// 	let count = 0; // private variable
+// 	return function inner() {
+// 		count++;
+// 		return count;
+// 	};
+// }
+// let counter = outer();
+// console.log(counter()); // 1
+// console.log(counter()); // 2
+// console.log(counter()); // 3
+
+// // IIFE (Immediately Invoked Function Expression).
+// (function () {
+// 	console.log('Runs immediately');
+// })();
+
+// Hoisting: Declarations vs Expressions.
+// hello(); // Declarations are hoisted.
+// function hello() {
+// 	console.log('Hi');
+// }
+
+// greet(); // Expressions are not hoisted.
+// const greet = function () {
+// 	console.log('Hi');
+// };
+
+// //* Phase 13:
