@@ -131,3 +131,94 @@
 
 // console.log(cars);
 // let cars = 42;
+
+// //* Phase 9:
+// // Operators:
+// // arithmetic operators: +, -, *, /, %, ++, --
+// // assignment operators: =, +=, -=, *=, /=, %=
+// // comparison operators: ==, ===, !=, !==, >, <, >=, <=
+// // logical operators: &&, ||, !
+// // string operators: +, +=
+// // conditional (ternary) operator: ? :
+// let a = 10;
+// let b = 5;
+// let c = 20;
+
+// // arithmetic operators:
+// console.log(a + b); // 15
+// console.log(a - b); // 5
+// console.log(a * b); // 50
+// console.log(a / b); // 2
+// console.log(a % b); // 0
+// console.log(a++); // 10
+// console.log(++a); // 12
+// console.log(b--); // 5
+// console.log(--b); // 3
+
+// // assignment operators:
+// a += 5; // a = a + 5
+// console.log(a); // 15
+// a -= 5; // a = a - 5
+// console.log(a); // 10
+// a *= 2; // a = a * 2
+// console.log(a); // 20
+// a /= 2; // a = a / 2
+// console.log(a); // 10
+// a %= 3; // a = a % 3
+// console.log(a); // 1 (remainder of 10/3)
+
+// // comparison operators:
+// console.log(a == b); // false
+// console.log(a === b); // false
+// console.log(a != b); // true
+// console.log(a !== b); // true
+// console.log(a > b); // true
+// console.log(a < b); // false
+// console.log(a >= b); // true
+// console.log(a <= b); // false
+
+// // logical operators:
+// console.log(a > b && a < c); // true
+// console.log(a > b || a > c); // true
+// console.log(!(a > b)); // false // not operator
+
+// // string operators:
+// let firstName = 'Dulon';
+// let lastName = 'Molla';
+// let fullName = firstName + ' ' + lastName;  // concatenation
+// console.log(fullName); // Dulon Molla
+// firstName += ' Mahadi'; // firstName = firstName + ' Mahadi'
+// console.log(firstName); // Dulon Mahadi
+
+// // conditional (ternary) operator:
+// let age = 20;
+// let canVote = (age >= 18) ? 'Yes' : 'No';
+// console.log(canVote); // Yes
+// // if age is 18 or more, canVote is 'Yes', otherwise 'No'.
+
+// //* Phase 10:
+// // Control Flow: Loops:
+// // if, else if, else.
+// if (10 > 12) {
+// 	console.log('condition proves true!');
+// } else if (10 === 10) {
+// 	console.log('condition proves false!');
+// } else {
+// 	console.log('both are gone wrong!');
+// }
+
+// // switch case:
+// let marks = 78;
+// switch (marks) {
+// 	case marks >= 60:
+// 		console.log('You got A+');
+// 		break;
+// 	case marks >= 50:
+// 		console.log('You got A');
+// 		break;
+// 	default:
+// 		console.log('You are fail!');
+// }
+
+//* Phase 11:
+// Loops:
