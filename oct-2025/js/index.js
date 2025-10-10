@@ -344,3 +344,56 @@
 // };
 
 // //* Phase 13:
+// // Arrays:
+// let fruits = ['apple', 'banana', 'cherry'];
+// console.log(fruits.length); // 3- length check
+
+// let marks = [85, 90, 78];
+// console.log(marks[1]); //90- check position 1
+
+// marks[2] = 88; // change position 2
+
+// let arr = ['dulon', '25', true, 20, 100, 200];
+// arr.push('newItem'); // add item to the end
+// arr.pop(); // remove item from the end
+// arr.unshift('firstItem'); // add item to the beginning
+// arr.shift(); // remove item from the beginning
+// console.log(arr.indexOf(20)); // find index of 20
+// console.log(arr.includes(100)); // check if 100 exists
+// console.log(arr.slice(1, 4)); // get a sub-array from index 1 to 3
+// arr.splice(2, 1, 'replacedItem'); // remove 1 item at index 2 and add 'replacedItem'
+// arr.reverse(); // reverse the array
+// arr.sort(); // sort the array (alphabetically for strings, numerically for numbers)
+// arr.sort((a, b) => a - b); // Correct numeric sort
+
+// let newArr = arr.slice(1,3); // Copy from index 1 to 2
+// arr.sort(); // Lexical sort by default
+
+// // Iteration Methods.
+// let prices = [100, 200, 300];
+// prices.forEach((price) => console.log(price)); // forEach
+
+// let doubled = prices.map((price) => price * 2); // map
+
+// let expensive = prices.filter((price) => price > 150); // filter
+// let total = prices.reduce((acc, price) => acc + price, 0); // reduce
+
+// prices.find((price) => price > 150); // find
+// prices.findIndex((price) => price > 150); // findIndex
+// prices.some((price) => price > 250); // some
+// prices.every((price) => price > 50); // every
+
+// // Multidimensional Arrays.
+// let matrix = [
+// 	[1, 2, 3],
+// 	[4, 5, 6],
+// 	[7, 8, 9],
+// ];
+// console.log(matrix[1][2]); // Accessing element 6
+
+// // Destructuring & Spread.
+// let [first, second, ...rest] = prices; // Destructuring
+// let newPrices = [...prices, 400, 500]; // Spread operator
+
+//* Phase 14:
+// Objects:
