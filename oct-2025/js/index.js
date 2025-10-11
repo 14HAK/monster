@@ -396,4 +396,63 @@
 // let newPrices = [...prices, 400, 500]; // Spread operator
 
 //* Phase 14:
-// Objects:
+// // Objects:
+// let student = {
+// 	name: 'Dulon Mahadi Molla',
+// 	age: 35,
+// 	city: 'Dhaka',
+// 	isMarrid: false,
+// 	address: {
+// 		street: '123 Main St',
+// 		zip: '10001',
+// 	},
+// };
+
+// // Key-Value Structure.
+// console.log(student['name']); // Accessing value by key
+// console.log(student.age); // Accessing value by key
+// console.log(UserActivation.address.street); // Accessing nested object value
+
+// // Adding/Modifying Properties.
+// student.phone = '123-456-7890'; // Adding new property
+// student.age = 36; // Modifying existing property
+
+// // object destructuring.
+// let { name, age } = student; // Destructuring
+// let { address: { street } } = student; // Destructuring
+// console.log(name, age);
+// console.log(street)
+
+// // for...in loop.
+// for (let key in student) {
+// 	console.log(key + ': ' + student[key]);
+// } // Iterating over object properties
+
+// // Object Methods.
+// console.log(Object.keys(student)); // Getting all keys
+// console.log(Object.values(student)); // Getting all values
+// console.log(Object.entries(student)); // Getting key-value pairs
+// let copiedStudent = Object.assign({}, student); // Shallow copy
+// let deepCopiedStudent = JSON.parse(JSON.stringify(student)); // Deep copy
+
+// // this keyword.
+// let person = {
+// 	name: 'Dulon',
+// 	greet: function () {
+// 		console.log('Hello, ' + this.name);
+// 	},
+// };
+// person.greet(); // Using 'this' in method
+// // 'this' refers to the object calling the method.
+// let greet = person.greet;
+// greet(); // 'this' is undefined in this context
+// // 'this' refers to the global object (or undefined in strict mode).
+
+// // ❓ Optional Chaining.
+// console.log(student?.address?.street); // Safe access to nested properties
+
+// // delete obj.key; // Deleting a property
+// delete person.greet; // Deleting a method
+// console.log(person.greet); // undefined
+
+//* Practice Zoon:
