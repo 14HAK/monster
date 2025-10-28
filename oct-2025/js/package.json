@@ -1,7 +1,7 @@
 {
 	"scripts": {
-		"start": "node index.js",
-		"dev": "nodemon index.js"
+		"start": "node javascript.js",
+		"dev": "nodemon javascript.js"
 	},
 	"devDependencies": {
 		"lodash": "^4.17.21",
